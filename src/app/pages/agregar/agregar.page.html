@@ -29,10 +29,12 @@
   </ion-list>
 
   <ion-item color="dark"
-            *ngFor="let item of lista.items">
+            *ngFor="let item of lista.items"
+            class="animated fadeInDown">
     <ion-checkbox slot="start" 
                   color="tertiary"
-                  [(ngModel)]="item.completado">
+                  [(ngModel)]="item.completado"
+                  (ionChange)="cambioCheck(item)">
     </ion-checkbox>
     <ion-label>{{item.desc}}</ion-label>
   </ion-item>
