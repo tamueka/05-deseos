@@ -25,6 +25,7 @@ export class Tab1Page {
       inputs: [{
         name: 'titulo',
         type: 'text',
+        value: '123',
         placeholder: 'Nombre de la lista',
       }],
       buttons: [
